@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="form_box ">
+
+            <div class="main-form">
+
+                <div class="button-box">
+                    <div id="btn"></div>
+                    <button type="button" class="toggle-btn " onclick="Login()">Login</button>
+                    <button type="button" class="toggle-btn " onclick="Register()">Register</button>
+                </div>
+
+                <form action="#" id="login">
+
+                    <div class="input_box">
+                        <input class="icon" type="text" placeholder="&#xf007;  Enter Name" required>
+                    </div>
+                    <div class="input_box">
+                        <input class="icon" type="password" placeholder="&#xf023;  Enter Password" required>
+                    </div>
+                    <div class="glow-btn ">
+                        <button>Login</button>
+                    </div>
+                </form>
+
+                <form action="#" id="register" class="resize">
+
+                    <div class="input_box">
+                        <input class="icon" type="text" placeholder="&#xf007; Enter name" required>
+                    </div>
+
+                    <div class="input_box">
+                        <input class="icon" type="text" placeholder="&#xf0e0; Enter email address" required>
+                    </div>
+
+                    <div class="input_box">
+                        <input class="icon" type="text" placeholder="&#xf095; Enter Phone number" required>
+                    </div>
+
+                    <div class="input_box">
+                        <input class="icon" type="password" placeholder="&#xf023; Create password" required>
+                    </div>
+
+                    <div class="glow-btn ">
+                        <button>Register</button>
+                    </div>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- java-script -->
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function Register() {
+            x.style.left = "-450px";
+            y.style.left = "50px";
+            z.style.left = "135px";
+        }
+        function Login() {
+            x.style.left = "50px";
+            y.style.left = "400px";
+            z.style.left = "0";
+        }
+    </script>
+
+</body>
+
+</html>
